@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua is pretty awesome!</title>
+    <link rel="stylesheet" href="output.css">
+
+    <!-- link for font awesome icons -->
+    <link rel="stylesheet" href="/fontawesome-free-6.5.1-web/css/fontawesome.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.5.1-web/css/brands.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.5.1-web/css/solid.css">
+
+    <script src="js/navbar.js" defer></script>
+</head>
+
+<body class="bg-white text-purple-700">
+    <header class="sticky top-0 h-0">
+        <nav id="navbar" class="">
+            <div class="flex justify-end p-3">
+                <button id="nav-toggle" class="transition duration-500 z-30">
+                   <i class="fa-solid fa-bars fa-xl"></i>
+                </button>
+            </div>
+
+            <div id="overlay" class="bg-purple-200 absolute w-screen h-screen top-[-100vh] z-10 flex flex-col justify-center align-middle transition-all duration-700">
+                <ul id="links" class="text-center text-2xl">
+                    <li class="font-semibold py-5 active:text-white rounded-lg">
+                       <a href="#about">About</a> 
+                    </li>
+                    <li class="font-semibold py-5 active:text-white rounded-lg">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="font-semibold py-5 active:text-white rounded-lg">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>  
+        <!-- end of navbar -->
+    </header>
+    <!-- end of the header -->
+    <main class="w-10/12 mx-auto">
+
+        <article id="intro" class="h-screen  flex flex-col align-middle justify-center 
+        md:flex-row md:justify-between">
+            <section class="md:w-1/2 md:my-auto ">
+                <h1 class="font-semibold text-4xl leading-normal md:text-6xl">Hi I'm Josh</h1>
+                <p class="font-light text-xl leading-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, doloremque!</p>
+            </section>
+
+            <div class="w-[150px] h-[150px] border-2 border-purple-700 rounded-full  mx-auto mt-10 sm:w-[200px] sm:h-[200px] md:my-auto md:mx-0 md:w-[300px] md:h-[300px]"></div>
+        </article>
+        <!-- end of the intro -->
+
+        <article id="about" class="min-h-screen h-fits flex flex-col my-10">
+            <p id="about-text" class="text-4xl my-auto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quae, similique quibusdam eligendi non adipisci at alias sint quisquam minus ut assumenda autem odit tempora commodi tenetur voluptates harum aperiam.</p>
+            <!-- end of the paragraph -->
+
+            <!-- js to add: when you hover over pic add a lil caption, on mobile put the caption under the pic -->
+            <section id="pictures" class="lg:flex"> 
+                <div class="w-11/12 aspect-[4/5] mt-10 rounded-lg text-white mx-auto bg-purple-700 md:w-2/3 lg:w-1/3"> a pic</div>
+                <div class="w-11/12 aspect-[4/5] mt-10 rounded-lg text-white mx-auto bg-purple-700 md:w-2/3 lg:mx-4 lg:w-1/3"> a pic</div>
+                <div class="w-11/12 aspect-[4/5] mt-10 rounded-lg text-white mx-auto bg-purple-700 md:w-2/3 lg:w-1/3"> a pic</div>
+            </section>
+            <!-- end of picture section -->
+        </article>
+        <!-- end of about me section -->
+
+        <article id="projects" class="min-h-screen h-fit flex flex-col  my-10">
+            <h2 class="mb-4 text-xl"> Here are some projects I've worked on. Hover over them to see more information :)</h2>
+            <!-- js to add: when you hover over the items give a brief description and add a dark filter -->
+            <div class="grow grid grid-flow-row-dense lg:grid-rows-2 grid-rows-4 grid-col-7 gap-4">
+                <section class="rounded-lg bg-gray-300 text-purple-950 h-[300px] lg:h-auto
+                lg:col-span-4 hover:bg-gray-400">1 nsp site</section>
+                <section class="rounded-lg bg-gray-300 text-purple-950 h-[300px] lg:h-auto
+                lg:col-start-5 lg:col-span-3 hover:bg-gray-400">2 something i'm working on </section>
+                <!-- row split -->
+                <section class="rounded-lg bg-gray-300 text-purple-950 h-[300px] lg:h-auto
+                lg:col-span-3 hover:bg-gray-400">3 this site</section>
+                <section class=" rounded-lg bg-gray-300 text-purple-950 h-[300px] lg:h-auto
+                lg:col-span-4 hover:bg-gray-400">4 somthing else</section>
+            </div>
+        </article>
+        <!-- end of projects -->
+
+
+        <!-- THIS WORKS UNTUL IT GET VERY SMALL JUST ADD THE TEXT BOXES UNDER THE HEADER AND RESIZE THE TEXT BOXES -->
+        <article id="contact" class="min-h-96 flex flex-col md:flex-row mt-10 justify-between">
+            <section class=" md:w-1/3">
+
+                <h2 class="text-xl md:text-5xl">Contact me!</h2>
+                <p class="text-sm md:text-xl font-thin mt-5">Contact me and I'll be in touch ASAP. You can talk to me about anything. You can contact me here or reach me on social media :3</p>
+
+                <!-- make these links work :P -->
+                <ul id="icons" class="flex justify-around md:my-5">
+                    <li class="p-3">
+                        <i class="fa-brands fa-instagram fa-xl md:fa-2xl"></i>
+                    </li>
+                    <li class="p-3">
+                        <i class="fa-brands fa-linkedin fa-xl md:fa-2xl"></i>
+                    </li>
+                    <li class="p-3">
+                        <i class="fa-brands fa-github fa-xl md:fa-2xl"></i>
+                    </li>
+                </ul>
+            </section>
+
+            <form class="md:w-1/2 flex flex-col" action="mail.php" method="post">
+                <input type="text" id="name" placeholder="name" autocomplete="off" required class="outline-none focus-visible:ring focus-visible:ring-inset focus-visible:ring-gray-700 h-auto p-4 rounded-xl border-gray-300 border-2 text-purple-950">
+                <input type="email" id="email" placeholder="email" autocomplete="off" required class="focus:border-gray-700 h-auto my-4 p-4 rounded-xl border-gray-300 border-2">
+                <textarea name="message" id="message" placeholder="um hi josh you're so cute n sexy i just wanna be u frl" class="mb-4 rounded-xl border-gray-300 border-2 h-56 md:h-72 p-4"></textarea>
+                <button type="submit" class="border-gray-300 border-2 md:w-52 p-2 rounded-xl bg-white text-purple-950 ">SEND MESSAGE</button>
+            </form>
+        </article>
+        <!-- end of the contact section -->
+    </main>
+
+    <footer class="bg-purple-200 text-center mt-5 p-4">
+        Josh made this :) 
+    </footer>
+
+</body>
+
+</html>
